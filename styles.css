@@ -1,0 +1,37 @@
+/* Basic reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
+
+a { color: #007bff; text-decoration: none; }
+a.btn { background: #007bff; color: white; padding: .5rem 1rem; border-radius: 4px; }
+
+header.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #eef6ff;
+}
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.skills-grid, .card-grid {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+.skills-grid {
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+.card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+section { padding: 2rem 1rem; max-width: 800px; margin: 0 auto; }
+footer { text-align: center; padding: 1rem; font-size: .9rem; color: #666; }
